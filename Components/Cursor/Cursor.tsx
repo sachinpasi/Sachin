@@ -2,8 +2,8 @@ import gsap, { Linear } from "gsap";
 import React, { MutableRefObject, useEffect, useRef } from "react";
 
 const Cursor = () => {
-  const cursor: MutableRefObject<HTMLDivElement> = useRef(null);
-  const follower: MutableRefObject<HTMLDivElement> = useRef(null);
+  const cursor = useRef<HTMLDivElement>(null);
+  const follower = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const HandleCircleMovement = (e: any) => {

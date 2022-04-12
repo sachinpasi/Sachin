@@ -8,13 +8,13 @@ interface Nav {
 }
 
 const Navbar = ({ isNavOpen, setIsNavOpen }: Nav) => {
-  const Nav: MutableRefObject<HTMLDivElement> = useRef(null);
+  const Nav = useRef<HTMLDivElement>(null);
 
-  const List: MutableRefObject<HTMLDivElement> = useRef(null);
+  const List = useRef<HTMLDivElement>(null);
 
-  const Line1: MutableRefObject<HTMLDivElement> = useRef(null);
-  const Line2: MutableRefObject<HTMLDivElement> = useRef(null);
-  const Line3: MutableRefObject<HTMLDivElement> = useRef(null);
+  const Line1 = useRef<HTMLDivElement>(null);
+  const Line2 = useRef<HTMLDivElement>(null);
+  const Line3 = useRef<HTMLDivElement>(null);
 
   const HandleToggle = () => {
     setIsNavOpen(!isNavOpen);
