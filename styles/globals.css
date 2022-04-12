@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "IvyMode";
+    src: url("/fonts/IvyMode-Regular.woff2") format("woff2");
+    font-weight: 400;
+  }
+}
+@layer base {
+  @font-face {
+    font-family: "Freight";
+    src: url("/fonts/Freight.woff2") format("woff2");
+    font-weight: 400;
+  }
+}
+
+* {
+  cursor: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  -ms-overflow-style: scrollbar;
+  scrollbar-color: black;
+  scrollbar-width: thin;
+  overflow-x: hidden;
+  /* background-color: blanchedalmond; */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  color: #fe184f;
+}
+
+.project:nth-child(odd) {
+  flex-direction: column;
+  padding-right: 5%;
+  flex-grow: 1;
+  margin: 0;
+  margin-right: 0;
+  border-right: 1px solid #eeeeee;
+}
+
+.project:nth-child(even) {
+  flex-direction: column-reverse;
+  padding-left: 5%;
+  margin-left: 0;
+}
