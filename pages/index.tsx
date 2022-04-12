@@ -12,7 +12,7 @@ import Skills from "../Components/Skills/Skills";
 const HomePage = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-  const Main: MutableRefObject<HTMLDivElement> = useRef(null);
+  const Main = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (isNavOpen) {
