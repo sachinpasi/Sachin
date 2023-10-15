@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flex justify-between items-baseline py-40">
+    <footer className="flex flex-col md:flex-row justify-between md:items-baseline pt-24 pb-8  md:py-40">
       <a className="text-xl font-IvyMode flex items-center link">
         BACK TO TOP
         <svg
@@ -18,7 +18,7 @@ const Footer = () => {
           ></path>
         </svg>
       </a>
-      <div className="text-right">
+      <div className="text-right mt-6 md:mt-0">
         <a
           className="text-2xl tracking-wide font-IvyMode link"
           href="mailto:sachinpasi2000@gmail.com"

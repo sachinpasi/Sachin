@@ -54,11 +54,11 @@ const Cursor = () => {
     <>
       <div
         ref={cursor}
-        className="fixed w-4 h-4 select-none pointer-events-none z-[5000] rounded-full mix-blend-difference bg-black"
+        className="hidden md:block fixed w-4 h-4 select-none pointer-events-none z-[5000] rounded-full mix-blend-difference bg-black"
       ></div>
       <div
         ref={follower}
-        className="fixed h-8 w-8 select-none pointer-events-none z-[1000] rounded-full -left-2 -top-6 bg-black bg-opacity-50 "
+        className="hidden md:block fixed h-8 w-8 select-none pointer-events-none z-[1000] rounded-full -left-2 -top-6 bg-black bg-opacity-50 "
       ></div>
     </>
   );

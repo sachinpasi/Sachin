@@ -75,7 +75,7 @@ const Navbar = ({ isNavOpen, setIsNavOpen }: Nav) => {
     <div
       ref={Nav}
       style={Styles}
-      className="fixed top-0 bottom-0 left-0 h-full w-[45px] border-r border-[#eeeeee]"
+      className=" hidden fixed top-0 bottom-0 left-0 h-full w-[45px] border-r border-[#eeeeee] md:block "
     >
       <button
         onClick={HandleToggle}

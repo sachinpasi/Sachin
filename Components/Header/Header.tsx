@@ -2,14 +2,14 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="w-full  flex flex-col justify-center py-8 min-h-[90vh] relative -mt-4">
+    <header className="w-full  flex flex-col justify-center py-8 min-h-[85vh] md:min-h-[90vh] relative -mt-4">
       <h3 className=" text-[0.9em] uppercase  tracking-[1px]">
         Hi! My name is Sachin Pasi
       </h3>
-      <h1 className="text-[6.5em] my-8 font-IvyMode font-semibold leading-tight">
+      <h1 className=" text-[3.5em] md:text-[6.5em] my-8 font-IvyMode font-black md:font-semibold leading-tight">
         I solve problems through design and technology.
       </h1>
-      <p className="leading-[1.5em] max-w-[1600px] font-IvyMode tracking-wider ">
+      <p className="leading-[1.5em]  max-w-[1600px] font-IvyMode  tracking-wider ">
         From{" "}
         <a
           className="border-b py-1 border-[#000] hover:border-[#fe184f]"
@@ -20,13 +20,13 @@ const Header = () => {
         {"  "}→ I create work that sits at the intersection of art, design and
         technology.
       </p>
-      <button className="bg-transparent border-none flex items-center absolute bottom-4 group link ">
+      <button className=" bg-transparent border-none flex items-center absolute -bottom-1 md:bottom-4 group link">
         <div className="w-14 h-14 border border-black  rounded-full relative mr-6">
           <svg
             style={{
               transition: "all 0.5s ease",
             }}
-            className="absolute -left-2/4 top-0 h-14 w-14 object-contain text-black group-hover:-left-[35%]"
+            className="absolute -left-2/4 top-0 h-14 w-14 object-contain text-black group-hover:-left-[35%] "
             viewBox="0 0 72 16"
             xmlns="http://www.w3.org/2000/svg"
           >

@@ -8,11 +8,11 @@ const ProjectItem = ({ Name, Website, Description, Stack, src }: any) => {
       style={{
         flex: "1 0 41%",
       }}
-      className="py-[60px] flex self-start border-t border-[#eeeeee]  w-2/4 align-top flex-col  gap-y-8  project "
+      className="py-[30px] md:py-[60px] flex self-start border-t border-[#eeeeee]  md:w-2/4 align-top flex-col  gap-y-8  project "
     >
       <div>
         <h3 className="font-IvyMode text-3xl font-semibold my-[6px]">{Name}</h3>
-        <h4 className="text-xs my-8 mt-5 font-Freight uppercase font-medium tracking-wide flex items-center gap-x-4">
+        <h4 className="text-xs my-4 md:my-8 mt-2 md:mt-5 font-Freight uppercase font-medium tracking-wide flex items-center gap-x-4">
           <Link href={Website ? Website : "/"}>
             <a className="border-b border-[#979797] inline-block self-start link">
               website
@@ -31,7 +31,7 @@ const ProjectItem = ({ Name, Website, Description, Stack, src }: any) => {
           ))}
         </div>
       </div>
-      <div className="w-full h-[539px] relative">
+      <div className="w-full h-[360px] md:h-[539px] relative">
         {src && (
           <Image
             src={src}

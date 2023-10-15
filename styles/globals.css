@@ -40,15 +40,39 @@ html {
 
 .project:nth-child(odd) {
   flex-direction: column;
-  padding-right: 5%;
+  padding-right: 0;
   flex-grow: 1;
   margin: 0;
   margin-right: 0;
   border-right: 1px solid #eeeeee;
 }
-
 .project:nth-child(even) {
-  flex-direction: column-reverse;
-  padding-left: 5%;
+  flex-direction: column;
+  padding-left: 0;
   margin-left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .project:nth-child(odd) {
+    flex-direction: column;
+    padding-right: 5%;
+    flex-grow: 1;
+    margin: 0;
+    margin-right: 0;
+    border-right: 1px solid #eeeeee;
+  }
+  .project:nth-child(even) {
+    flex-direction: column-reverse;
+    padding-left: 5%;
+    margin-left: 0;
+  }
+}
+
+@keyframes bounce-left-to-right {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: -35%;
+  }
 }

@@ -31,18 +31,17 @@ const HomePage = () => {
   return (
     <>
       <Cursor />
-      <Navbar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
+      {/* <Navbar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} /> */}
       <div
         ref={Main}
         id="main"
-        className="relative left-0 w-4/5 max-w-[1200px] opacity-100 my-30 mx-auto min-h-screen"
+        className="relative left-0 w-11/12  md:w-4/5 max-w-[1200px] opacity-100 my-30 mx-auto min-h-screen"
       >
         <Header />
-        <Line />
+        <Line  />
         <Projects />
         <Line />
         <Skills />
-
         <Footer />
       </div>
     </>
