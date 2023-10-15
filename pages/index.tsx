@@ -8,6 +8,7 @@ import Line from "../Components/Line";
 import Navbar from "../Components/Navbar/Navbar";
 import Projects from "../Components/Projects/Projects";
 import Skills from "../Components/Skills/Skills";
+import Head from "next/head";
 
 const HomePage = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -30,6 +31,9 @@ const HomePage = () => {
 
   return (
     <>
+      <Head>
+        <title>Sachin Pasi</title>
+      </Head>
       <Cursor />
       {/* <Navbar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} /> */}
       <div
