@@ -6,7 +6,7 @@ export const Data = {
     {
       Name: "Decor",
       Github: "https://github.com/sachinpasi/Decor-Frontend",
-      Website: "https://decor-frontend.vercel.app/",
+      Website: "https://decor.sachinpasi.com/",
       Description:
         "Decor is Luxury Ecommerce Store, with Full-Fledged Admin Panel.",
       Stack: [
@@ -21,7 +21,7 @@ export const Data = {
     {
       Name: "Resume Builder",
       Github: "https://github.com/sachinpasi/Resume-Builder",
-      Website: "https://resume-builder-three.vercel.app/",
+      Website: "https://resume-builder-three.sachinpasi.com/",
       Description: "Resume Builder is Web Application to Build Modern Resume.",
       Stack: [{ Icon: SiNextdotjs, Link: "https://nextjs.org/" }],
       Image: "/images/resume-builder.png",
